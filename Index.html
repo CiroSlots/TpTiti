@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StockProject — Control de stock y ventas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- MENÚ -->
+  <header>
+    <a href="#" class="logo">⚛ Stock<span>Project</span></a>
+    <button id="btnMenu">☰</button>
+    <nav id="menu">
+      <a href="#modulos">Módulos</a>
+      <a href="#sistema">Probalo</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#pasos">Cómo funciona</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a href="https://wa.me/5493412031359" class="btn">💬 Hablar por WhatsApp</a>
+  </header>
+
+  <!-- PORTADA -->
+  <section class="hero">
+    <div>
+      <p class="etiqueta">● VENTAS · INVENTARIO · PEDIDOS · CLIENTES</p>
+      <h1>Controlá el stock y las ventas de tu comercio <span>desde un solo sistema.</span></h1>
+      <p class="gris">StockProject ordena tu mercadería, tus proveedores y tus clientes, y convierte el mostrador en un proceso rápido. Sabés en todo momento qué tenés, qué falta y cuánto estás ganando.</p>
+      <a href="https://wa.me/5493412031359" class="btn">💬 Consultar y contratar →</a>
+      <a href="#sistema" class="btn borde">Ver el sistema por dentro</a>
+    </div>
+    <!-- Punto de venta: lo completa app.js -->
+    <div class="tarjeta">
+      <h3>Venta actual</h3>
+      <div id="productos" class="grilla"></div>
+      <p class="gris chico">TOTAL A COBRAR</p>
+      <h2 id="total">$ 0</h2>
+      <button id="btnCobrar" class="btn">Cobrar</button>
+      <button id="btnVaciar" class="btn borde">Vaciar</button>
+      <p id="mensaje" class="azul"></p>
+    </div>
+  </section>
+
+  <!-- RUBROS -->
+  <section class="centro">
+    <p class="etiqueta">SE ADAPTA A CUALQUIER COMERCIO QUE MANEJE MERCADERÍA</p>
+    <div id="rubros" class="chips"></div>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section id="modulos">
+    <p class="etiqueta">● LOS MÓDULOS</p>
+    <h2>Todo el comercio conectado en un mismo sistema</h2>
+    <div id="listaModulos" class="grilla"></div>
+  </section>
+
+  <!-- INVENTARIO EN VIVO -->
+  <section id="sistema">
+    <p class="etiqueta">● EL SISTEMA POR DENTRO</p>
+    <h2>Probalo: cada venta actualiza el inventario al instante</h2>
+    <div class="tarjeta">
+      <h3>Inventario</h3>
+      <table>
+        <thead><tr><th>Producto</th><th>Precio</th><th>Stock</th><th>Estado</th></tr></thead>
+        <tbody id="tablaStock"></tbody>
+      </table>
+      <p id="resumen" class="gris chico"></p>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios">
+    <p class="etiqueta">● POR QUÉ STOCKPROJECT</p>
+    <h2>Dejás de adivinar y empezás a decidir con datos</h2>
+    <div id="listaBeneficios" class="grilla cuatro"></div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="pasos">
+    <p class="etiqueta">● CÓMO FUNCIONA</p>
+    <h2>De la consulta al mostrador, en tres pasos</h2>
+    <div id="listaPasos" class="grilla tres"></div>
+  </section>
+
+  <!-- PREGUNTAS -->
+  <section id="preguntas">
+    <p class="etiqueta">● PREGUNTAS FRECUENTES</p>
+    <h2>Lo que suelen preguntarnos antes de contratar</h2>
+    <div id="listaPreguntas"></div>
+  </section>
+
+  <!-- LLAMADO FINAL -->
+  <section class="centro">
+    <h2>Pedí tu demostración y empezá a ordenar el comercio</h2>
+    <a href="https://wa.me/5493412031359" class="btn">💬 Escribir por WhatsApp</a>
+    <p class="gris">+54 9 341 203 1359 · Atención personalizada</p>
+  </section>
+
+  <footer>© <span id="anio"></span> StockProject. Todos los derechos reservados.</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
